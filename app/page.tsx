@@ -3,15 +3,6 @@ import LifeCounter from "./LifeCounter";
 
 type Item = { title: string; url: string; description: string };
 
-function posterImageSrc(url: string): string {
-  try {
-    const u = new URL(url);
-    if (u.hostname.includes("doubanio.com") || u.hostname.includes("image.tmdb.org"))
-      return `/api/proxy-image?url=${encodeURIComponent(url)}`;
-  } catch {}
-  return url;
-}
-
 function Section({
   id,
   title,
@@ -232,7 +223,7 @@ export default function Home() {
                   <figure key={i} className="group">
                     <div className="aspect-[2/3] overflow-hidden rounded bg-zinc-200 dark:bg-zinc-800">
                       <img
-                        src={posterImageSrc(p.image)}
+                        src={p.image}
                         alt={p.subtitle}
                         referrerPolicy="no-referrer"
                         className="h-full w-full object-cover transition-transform group-hover:scale-105"
@@ -294,7 +285,7 @@ export default function Home() {
                 <figure key={i} className="group">
                   <div className="aspect-[2/3] overflow-hidden rounded bg-zinc-200 dark:bg-zinc-800">
                     <img
-                      src={posterImageSrc(p.image)}
+                      src={p.image}
                       alt={p.title}
                       referrerPolicy="no-referrer"
                       className="h-full w-full object-cover transition-transform group-hover:scale-105"
