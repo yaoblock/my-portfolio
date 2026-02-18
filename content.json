@@ -1,0 +1,77 @@
+{
+  "siteTitle": "Writer's Block",
+  "intro": "6yrs in Gaming | Crypto since 2019 | Cinema Studies @NYU\nThe World as Method",
+  "contact": {
+    "email": "yaoyaoliu611@gmail.com",
+    "twitter": "https://x.com/liuyaoyao_611"
+  },
+  "working": [
+    {
+      "title": "DODO DEX",
+      "url": "https://dodotopia.notion.site/Dr-DODO-is-Researching-6c18bbca8ea0465ab94a61ff5d2d7682",
+      "description": "Research Lead | 2021.7 – 2024.6\n*Built the Research team from 0→1\n*Served as an independent investment advisor"
+    },
+    {
+      "title": "Tencent",
+      "url": "",
+      "description": "PR Communications Manager | 2017.6 – 2020.4\nLed PR strategy for PUBG (绝地求生) · Naruto Mobile (火影忍者) · Contra (魂斗罗) · Hitori no Shita (一人之下)"
+    },
+    {
+      "title": "NetEase",
+      "url": "",
+      "description": "Product Marketing Manager | 2014.11 – 2017.6\n*Drove marketing for Fantasy Westward Journey (梦幻西游), including TFBOYS collab\n*Built game social media playbook 0→1"
+    }
+  ],
+  "writing": [
+    {
+      "title": "Writer's Block",
+      "url": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99",
+      "description": "The need to be right is the mark of a vulgar mind.--Albert Camus"
+    }
+  ],
+  "watching": [],
+  "watchingStats": {
+    "watched": 1382,
+    "wish": 563
+  },
+  "watchingPosters": [
+    {
+      "title": "下班后",
+      "subtitle": "After Hours · Martin Scorsese",
+      "image": "https://image.tmdb.org/t/p/w500/eamOBurHBu0MIxohTIVcfxmZ6Z7.jpg"
+    },
+    {
+      "title": "群鸟",
+      "subtitle": "The Birds · Hitchcock",
+      "image": "https://image.tmdb.org/t/p/w500/iVWIpGDtiICvIfw4bmMLXQCl5EF.jpg"
+    },
+    {
+      "title": "金的音像店",
+      "subtitle": "Kim's Video · David Redmon & Ashley Sabin",
+      "image": "https://image.tmdb.org/t/p/w500/6ZJsFgtrJqrzEwHo1hgffhAzQYk.jpg"
+    }
+  ],
+  "readingStats": {
+    "read": 419,
+    "wish": 332,
+    "reading": 46
+  },
+  "reading": [],
+  "readingPosters": [
+    {
+      "title": "货币的非国家化",
+      "subtitle": "[美] 弗里德里希·冯·哈耶克 · 姚中秋 译",
+      "image": "/books/book2.png"
+    },
+    {
+      "title": "超文本和超链接",
+      "subtitle": "李怡",
+      "image": "/books/book1.png"
+    },
+    {
+      "title": "才女之累：李清照及其接受史",
+      "subtitle": "[美] 艾朗诺 · 夏丽丽、赵惠俊 译",
+      "image": "/books/book3.png"
+    }
+  ]
+}
