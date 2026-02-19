@@ -3,10 +3,14 @@
 import Image from "next/image";
 import { useRef, useEffect, useState, useCallback } from "react";
 
+const FLOAT_RANGE = 8; // max px offset
+
 export default function Avatar() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const rafRef = useRef<number | null>(null);
   const [hovered, setHovered] = useState(false);
+  const [offset, setOffset] = useState({ x: 0, y: 0 });
 
   const drawNoise = useCallback(() => {
     const canvas = canvasRef.current;
@@ -42,14 +46,45 @@ export default function Avatar() {
     };
   }, [hovered, drawNoise]);
 
+  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    const el = containerRef.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height / 2;
+    // -1 to 1 based on distance from center
+    const dx = (e.clientX - cx) / (rect.width / 2);
+    const dy = (e.clientY - cy) / (rect.height / 2);
+    setOffset({
+      x: dx * FLOAT_RANGE,
+      y: dy * FLOAT_RANGE,
+    });
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    setHovered(false);
+    setOffset({ x: 0, y: 0 });
+  }, []);
+
   return (
     <div
+      ref={containerRef}
       className="relative w-fit shrink-0"
       onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      onMouseLeave={handleMouseLeave}
+      onMouseMove={handleMouseMove}
     >
-      <div className="rotate-3 rounded-full border-[5px] border-white shadow-[2px_3px_10px_rgba(0,0,0,0.15)]">
-        <div className="relative h-20 w-20 overflow-hidden rounded-full sm:h-24 sm:w-24">
+      <div
+        className="rounded-full border-4 border-white shadow-sm will-change-transform dark:border-zinc-800 transition-transform duration-300 ease-out"
+        style={{
+          transform: `rotate(3deg) translate(${offset.x}px, ${offset.y}px)`,
+          backfaceVisibility: "hidden",
+        }}
+      >
+        <div
+          className="relative h-20 w-20 overflow-hidden rounded-full sm:h-24 sm:w-24"
+          style={{ outline: "1px solid transparent" }}
+        >
           <Image
             src="/avatar.png"
             alt="YAO avatar"
