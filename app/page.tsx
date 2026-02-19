@@ -1,58 +1,11 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
-import content, { type ContentItem, type PosterItem } from "@/lib/content";
+import content, {
+  type ContentItem,
+  type NoteLink,
+  type PosterItem,
+} from "@/lib/content";
 import LifeCounter from "./LifeCounter";
-
-type NoteLink = {
-  href: string;
-  label: string;
-};
-
-const WATCHING_NOTES: NoteLink[] = [
-  {
-    href: "https://www.notion.so/Film-Journal-Mikey-and-Nicky-17acf26e6fb580198e13e04d5e674edf",
-    label: "Film Journal: Mikey and Nicky↗",
-  },
-  {
-    href: "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=303cf26e6fb580268c94cdd01484b5ca&pm=s",
-    label: "History of the Reception of the film The Bitter Tea of General Yen↗",
-  },
-  {
-    href: "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=303cf26e6fb580d2bb0cfb07903c06a2&pm=s",
-    label: "A Preliminary Study：Exploring the Roles of Yingyu in Early Chinese Film History↗",
-  },
-  {
-    href: "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=17acf26e6fb580b392d7f2b6bbbff2e9&pm=s",
-    label: "《如梦之梦》的梦里梦外↗",
-  },
-];
-
-const READING_NOTES: NoteLink[] = [
-  {
-    href: "https://www.notion.so/2022-Good-Reading-for-Hard-Times-17acf26e6fb580acbbe5d5fc09a6038b",
-    label: "2022书单｜Good Reading for Hard Times↗",
-  },
-  {
-    href: "https://www.notion.so/17acf26e6fb580819a94dfe30a7b9958",
-    label: "沿着阅读的方向↗",
-  },
-  {
-    href: "https://www.notion.so/17acf26e6fb5804e8fa4fbda24b3a17f",
-    label: "春来不是读书天↗",
-  },
-  {
-    href: "https://www.notion.so/17acf26e6fb580a180f4f475506a070f",
-    label: "放假了，读点好玩的书吧↗",
-  },
-  {
-    href: "https://www.notion.so/17acf26e6fb58032b85eee661e6ece17?v=17acf26e6fb581458469000c30560894&p=17acf26e6fb580dd9518ca83a36ccd41&pm=s",
-    label: "2020年，我的读书小记↗",
-  },
-  {
-    href: "https://www.notion.so/17acf26e6fb58032b85eee661e6ece17?v=17acf26e6fb581458469000c30560894&p=17acf26e6fb58036b661d2d407979c0b&pm=s",
-    label: "无法知晓的自然↗",
-  },
-];
 
 function externalLinkProps(url?: string) {
   if (!url || !url.startsWith("http")) {
@@ -275,6 +228,7 @@ export default function Home() {
                 width={96}
                 height={96}
                 priority
+                sizes="(min-width: 640px) 96px, 80px"
                 className="h-20 w-20 rounded-full object-cover sm:h-24 sm:w-24"
               />
               <LifeCounter />
@@ -298,8 +252,7 @@ export default function Home() {
         <Section id="writing" title="Writing">
           <ul className="space-y-4 text-zinc-700 dark:text-zinc-300">
             {content.writing.map((item) => {
-              const isCamus = item.description?.includes("Albert Camus");
-              if (!isCamus) {
+              if (item.layout !== "quote") {
                 return (
                   <li key={itemKey(item)} className="block">
                     <span className="text-foreground">
@@ -322,6 +275,7 @@ export default function Home() {
                       alt="Le besoin d'avoir raison, marque d'esprit vulgaire. / 加缪笔记"
                       width={800}
                       height={500}
+                      sizes="(max-width: 640px) 100vw, 24rem"
                       className="mt-3 h-auto max-w-sm rounded object-cover mx-auto block"
                     />
                     <div className="mt-3 text-zinc-500 dark:text-zinc-400 text-sm">
@@ -373,7 +327,7 @@ export default function Home() {
                     Part 2
                   </a>
                 </p>
-                <NoteList links={WATCHING_NOTES} />
+                <NoteList links={content.watchingNotes} />
               </div>
             </>
           )}
@@ -403,7 +357,7 @@ export default function Home() {
           )}
 
           <div className="mt-4">
-            <NoteList links={READING_NOTES} />
+            <NoteList links={content.readingNotes} />
           </div>
         </Section>
 

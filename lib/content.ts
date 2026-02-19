@@ -4,6 +4,7 @@ export type ContentItem = {
   title: string;
   url?: string;
   description?: string;
+  layout?: "quote";
 };
 
 export type PosterItem = {
@@ -23,6 +24,11 @@ export type ReadingStats = {
   reading: number;
 };
 
+export type NoteLink = {
+  href: string;
+  label: string;
+};
+
 export type SiteContent = {
   siteTitle: string;
   intro?: string;
@@ -35,9 +41,11 @@ export type SiteContent = {
   watching: ContentItem[];
   watchingStats?: WatchingStats;
   watchingPosters: PosterItem[];
+  watchingNotes: NoteLink[];
   reading: ContentItem[];
   readingStats?: ReadingStats;
   readingPosters: PosterItem[];
+  readingNotes: NoteLink[];
 };
 
 const source = rawContent as Partial<SiteContent>;
@@ -51,9 +59,11 @@ const content: SiteContent = {
   watching: source.watching ?? [],
   watchingStats: source.watchingStats,
   watchingPosters: source.watchingPosters ?? [],
+  watchingNotes: source.watchingNotes ?? [],
   reading: source.reading ?? [],
   readingStats: source.readingStats,
   readingPosters: source.readingPosters ?? [],
+  readingNotes: source.readingNotes ?? [],
 };
 
 export default content;
