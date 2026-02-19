@@ -36,17 +36,17 @@
       {
         "title": "下班后",
         "subtitle": "After Hours · Martin Scorsese",
-        "image": "https://image.tmdb.org/t/p/w500/eamOBurHBu0MIxohTIVcfxmZ6Z7.jpg"
+        "image": "/movies/after-hours.jpg"
       },
       {
         "title": "群鸟",
         "subtitle": "The Birds · Hitchcock",
-        "image": "https://image.tmdb.org/t/p/w500/iVWIpGDtiICvIfw4bmMLXQCl5EF.jpg"
+        "image": "/movies/the-birds.jpg"
       },
       {
         "title": "金的音像店",
         "subtitle": "Kim's Video · David Redmon & Ashley Sabin",
-        "image": "https://image.tmdb.org/t/p/w500/6ZJsFgtrJqrzEwHo1hgffhAzQYk.jpg"
+        "image": "/movies/kims-video.jpg"
       }
     ],
     "notes": [
@@ -74,17 +74,17 @@
       {
         "title": "货币的非国家化",
         "subtitle": "[美] 弗里德里希·冯·哈耶克 · 姚中秋 译",
-        "image": "/books/book2.png"
+        "image": "/books/denationalization-of-money.png"
       },
       {
         "title": "超文本和超链接",
         "subtitle": "李怡",
-        "image": "/books/book1.png"
+        "image": "/books/hypertext-and-hyperlinks.png"
       },
       {
         "title": "才女之累：李清照及其接受史",
         "subtitle": "[美] 艾朗诺 · 夏丽丽、赵惠俊 译",
-        "image": "/books/book3.png"
+        "image": "/books/burden-of-female-talent.png"
       }
     ],
     "notes": [
