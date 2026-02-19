@@ -57,7 +57,7 @@ export default function LifeCounter() {
   }, []);
 
   return (
-    <p className="mt-4 font-mono text-sm tabular-nums text-zinc-500 dark:text-zinc-400">
+    <p className="mt-4 font-mono text-base tabular-nums text-zinc-500 dark:text-zinc-400">
       <span className="inline-block w-[18ch]">{display}</span>
     </p>
   );

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import content from "@/lib/content";
 import { itemKey, splitLines } from "@/lib/utils";
 import Section from "./components/section";
@@ -7,79 +8,81 @@ import ItemDescription from "./components/item-description";
 import PosterGrid from "./components/poster-grid";
 import NoteList from "./components/note-list";
 import LifeCounter from "./components/life-counter";
+import Avatar from "./components/avatar";
+import AsciiSpinner from "./components/ascii-spinner";
+
+const muted = "text-zinc-500 dark:text-zinc-400";
+const secondary = "text-zinc-600 dark:text-zinc-400";
+const linkHover = "hover:text-foreground transition-colors";
 
 export default function Home() {
-  const introLines = splitLines(content.intro);
-  const introHeader = introLines[0];
-  const introTagline = introLines[1];
+  const introTagline = splitLines(content.intro)[1];
   const email = content.contact?.email;
   const twitter = content.contact?.twitter;
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans">
-      <main className="mx-auto max-w-2xl px-6 py-16 sm:px-8">
-        <header className="mb-12 sm:mb-20">
-          <h1 className="text-xl font-semibold tracking-tight sm:text-2xl">
-            {content.siteTitle}
-          </h1>
-          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">Hi I&apos;m YAO</p>
-
-          <div className="mt-4 flex flex-row items-end gap-3 sm:gap-6">
-            <div className="min-w-0 flex-1 space-y-2 sm:space-y-3">
-              {introHeader && (
-                <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 max-w-lg">
-                  {introHeader.split(" | ").map((line) => (
-                    <span key={line} className="block">
-                      {line.trim()}
-                    </span>
-                  ))}
-                </p>
-              )}
-
-              {(email || twitter) && (
-                <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  {email && (
-                    <a
-                      href={`mailto:${email}`}
-                      className="hover:text-foreground underline underline-offset-2"
-                    >
-                      Email
-                    </a>
-                  )}
-                  {email && twitter && " · "}
-                  {twitter && (
-                    <a
-                      href={twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-foreground underline underline-offset-2"
-                    >
-                      Twitter
-                    </a>
-                  )}
-                </p>
-              )}
+      <main className="mx-auto max-w-2xl px-6 py-24 sm:px-8">
+        <header className="mb-16 sm:mb-24">
+          {/* Avatar + Title */}
+          <div className="relative">
+            <div className="absolute -top-8 -right-2 z-10 sm:-top-8 sm:right-4">
+              <Avatar />
             </div>
+            <h1 className="text-[clamp(3rem,15vw,6rem)] font-bold tracking-tight leading-none">
+              {content.siteTitle}
+            </h1>
+          </div>
 
-            <div className="flex shrink-0 flex-col items-end gap-2">
-              <Image
-                src="/avatar.png"
-                alt="YAO avatar"
-                width={96}
-                height={96}
-                priority
-                sizes="(min-width: 640px) 96px, 80px"
-                className="h-20 w-20 rounded-full object-cover sm:h-24 sm:w-24"
-              />
-              <LifeCounter />
-            </div>
+          {/* Intro */}
+          <p className="mt-6 text-base font-bold tracking-tighter text-foreground sm:mt-8 sm:text-lg">
+            I AM YAO.
+          </p>
+          <p
+            className={`mt-2 text-base leading-relaxed sm:text-lg ${secondary}`}
+          >
+            {
+              "A PR manager who shipped games at Tencent and NetEase, then fell into the crypto rabbit hole. Studied drama at Nanjing University and cinema at New York University — "
+            }
+            <em className="font-serif">
+              no cut, still rolling, scene unknown.
+            </em>
+          </p>
+
+          {/* Status */}
+          <div className={`mt-4 text-base`}>
+            <p className="tracking-tighter italic">
+              <AsciiSpinner /> Learning vibe coding
+            </p>
+            <p className="italic font-semibold tracking-tighter">
+              A PR manager who now opens pull requests.
+            </p>
+          </div>
+
+          {/* Links */}
+          <div className={`mt-6 flex items-center gap-4 text-sm ${muted}`}>
+            {email && (
+              <Link href={`mailto:${email}`} className={linkHover}>
+                [Email]
+              </Link>
+            )}
+            {twitter && (
+              <Link
+                href={twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={linkHover}
+              >
+                [Twitter]
+              </Link>
+            )}
           </div>
         </header>
 
         <Section id="working" title="Working">
           <ul className="space-y-4 text-zinc-700 dark:text-zinc-300">
             {content.working.map((item) => (
-              <li key={itemKey(item)} className="block">
+              <li key={itemKey(item)}>
                 <span className="text-foreground">
                   <ItemTitle item={item} />
                 </span>
@@ -94,7 +97,7 @@ export default function Home() {
             {content.writing.map((item) => {
               if (item.layout !== "quote") {
                 return (
-                  <li key={itemKey(item)} className="block">
+                  <li key={itemKey(item)}>
                     <span className="text-foreground">
                       <ItemTitle item={item} />
                     </span>
@@ -104,9 +107,13 @@ export default function Home() {
               }
 
               return (
-                <li key={itemKey(item)} className="block">
+                <li key={itemKey(item)}>
                   <div className="text-center">
-                    {introTagline && <p className="font-medium text-foreground">{introTagline}</p>}
+                    {introTagline && (
+                      <p className="font-medium text-foreground">
+                        {introTagline}
+                      </p>
+                    )}
                     <span className="text-foreground mt-2 block">
                       <ItemTitle item={item} />
                     </span>
@@ -118,7 +125,7 @@ export default function Home() {
                       sizes="(max-width: 640px) 100vw, 24rem"
                       className="mt-3 h-auto max-w-sm rounded object-cover mx-auto block"
                     />
-                    <div className="mt-3 text-zinc-500 dark:text-zinc-400 text-sm">
+                    <div className={`mt-3 text-sm ${muted}`}>
                       <p>The need to be right is the mark of a vulgar mind.</p>
                       <p className="mt-1">— Albert Camus</p>
                     </div>
@@ -131,7 +138,7 @@ export default function Home() {
 
         <Section id="watching" title="Watching">
           {content.watching.stats && (
-            <p className="text-zinc-600 dark:text-zinc-400 text-sm mb-6">
+            <p className={`text-sm mb-6 ${secondary}`}>
               Watched {content.watching.stats.watched}
               {" · "}
               Want to watch {content.watching.stats.wish}
@@ -153,7 +160,7 @@ export default function Home() {
                     href="https://x.com/liuyaoyao_611/status/2010707878706102391?s=20"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-zinc-600 dark:text-zinc-400 hover:text-foreground underline underline-offset-2"
+                    className={`underline underline-offset-2 ${secondary} ${linkHover}`}
                   >
                     Part 1
                   </a>
@@ -162,7 +169,7 @@ export default function Home() {
                     href="https://x.com/liuyaoyao_611/status/2010710683462377953?s=20"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-zinc-600 dark:text-zinc-400 hover:text-foreground underline underline-offset-2"
+                    className={`underline underline-offset-2 ${secondary} ${linkHover}`}
                   >
                     Part 2
                   </a>
@@ -175,9 +182,10 @@ export default function Home() {
 
         <Section id="reading" title="Reading">
           {content.reading.stats && (
-            <p className="text-zinc-600 dark:text-zinc-400 text-sm mb-6">
+            <p className={`text-sm mb-6 ${secondary}`}>
               Read {content.reading.stats.read} books{" · "}
-              Want to read {content.reading.stats.wish}{" · "}
+              Want to read {content.reading.stats.wish}
+              {" · "}
               Reading {content.reading.stats.reading}
             </p>
           )}
@@ -188,7 +196,9 @@ export default function Home() {
               alt={(poster) => poster.title}
               caption={(poster) => (
                 <>
-                  <span className="font-medium text-foreground">{poster.title}</span>
+                  <span className="font-medium text-foreground">
+                    {poster.title}
+                  </span>
                   <br />
                   {poster.subtitle}
                 </>
@@ -201,7 +211,9 @@ export default function Home() {
           </div>
         </Section>
 
-        <footer className="pt-8 border-t border-zinc-200 dark:border-zinc-800 text-sm text-zinc-500 dark:text-zinc-400">
+        <footer
+          className={`pt-8 border-t border-zinc-200 dark:border-zinc-800 text-sm ${muted}`}
+        >
           <ul className="flex flex-wrap gap-x-4 gap-y-1">
             {[
               { href: "#working", label: "Working" },
@@ -210,13 +222,15 @@ export default function Home() {
               { href: "#reading", label: "Reading" },
             ].map((nav) => (
               <li key={nav.href}>
-                <a href={nav.href} className="hover:text-foreground">
+                <a href={nav.href} className={linkHover}>
                   {nav.label}
                 </a>
               </li>
             ))}
           </ul>
-          <p className="text-xs text-zinc-500 dark:text-zinc-500 mt-4">Data updated annually.</p>
+          <div className="mt-4">
+            <LifeCounter />
+          </div>
         </footer>
       </main>
     </div>
