@@ -130,18 +130,18 @@ export default function Home() {
         </Section>
 
         <Section id="watching" title="Watching">
-          {content.watchingStats && (
+          {content.watching.stats && (
             <p className="text-zinc-600 dark:text-zinc-400 text-sm mb-6">
-              Watched {content.watchingStats.watched}
+              Watched {content.watching.stats.watched}
               {" · "}
-              Want to watch {content.watchingStats.wish}
+              Want to watch {content.watching.stats.wish}
             </p>
           )}
 
-          {content.watchingPosters.length > 0 && (
+          {content.watching.posters.length > 0 && (
             <>
               <PosterGrid
-                posters={content.watchingPosters}
+                posters={content.watching.posters}
                 alt={(poster) => poster.subtitle}
                 caption={(poster) => poster.subtitle}
               />
@@ -167,24 +167,24 @@ export default function Home() {
                     Part 2
                   </a>
                 </p>
-                <NoteList links={content.watchingNotes} />
+                <NoteList links={content.watching.notes} />
               </div>
             </>
           )}
         </Section>
 
         <Section id="reading" title="Reading">
-          {content.readingStats && (
+          {content.reading.stats && (
             <p className="text-zinc-600 dark:text-zinc-400 text-sm mb-6">
-              Read {content.readingStats.read} books{" · "}
-              Want to read {content.readingStats.wish}{" · "}
-              Reading {content.readingStats.reading}
+              Read {content.reading.stats.read} books{" · "}
+              Want to read {content.reading.stats.wish}{" · "}
+              Reading {content.reading.stats.reading}
             </p>
           )}
 
-          {content.readingPosters.length > 0 && (
+          {content.reading.posters.length > 0 && (
             <PosterGrid
-              posters={content.readingPosters}
+              posters={content.reading.posters}
               alt={(poster) => poster.title}
               caption={(poster) => (
                 <>
@@ -197,7 +197,7 @@ export default function Home() {
           )}
 
           <div className="mt-4">
-            <NoteList links={content.readingNotes} />
+            <NoteList links={content.reading.notes} />
           </div>
         </Section>
 

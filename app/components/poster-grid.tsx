@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
-import type { PosterItem } from "@/lib/content";
+import type { Poster } from "@/lib/content";
 import { posterKey } from "@/lib/utils";
 
 export default function PosterGrid({
@@ -8,9 +8,9 @@ export default function PosterGrid({
   alt,
   caption,
 }: {
-  posters: PosterItem[];
-  alt: (poster: PosterItem) => string;
-  caption: (poster: PosterItem) => ReactNode;
+  posters: Poster[];
+  alt: (poster: Poster) => string;
+  caption: (poster: Poster) => ReactNode;
 }) {
   return (
     <div className="grid grid-cols-3 gap-3 sm:gap-6">

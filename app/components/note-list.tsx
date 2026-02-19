@@ -1,6 +1,6 @@
-import type { NoteLink } from "@/lib/content";
+import type { Link } from "@/lib/content";
 
-export default function NoteList({ links }: { links: NoteLink[] }) {
+export default function NoteList({ links }: { links: Link[] }) {
   return (
     <ul className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1">
       {links.map((link) => (

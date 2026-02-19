@@ -1,7 +1,7 @@
-import type { ContentItem } from "@/lib/content";
+import type { Entry } from "@/lib/content";
 import { externalLinkProps } from "@/lib/utils";
 
-export default function ItemTitle({ item }: { item: ContentItem }) {
+export default function ItemTitle({ item }: { item: Entry }) {
   const url = item.url?.trim();
   if (!url) {
     return <>{item.title}</>;

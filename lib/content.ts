@@ -1,69 +1,44 @@
 import rawContent from "@/content.json";
 
-export type ContentItem = {
+/** A text entry with optional link and description. */
+export type Entry = {
   title: string;
   url?: string;
   description?: string;
   layout?: "quote";
 };
 
-export type PosterItem = {
+/** A poster card (book cover, movie poster, etc.). */
+export type Poster = {
   title: string;
   subtitle: string;
   image: string;
 };
 
-export type WatchingStats = {
-  watched: number;
-  wish: number;
-};
-
-export type ReadingStats = {
-  read: number;
-  wish: number;
-  reading: number;
-};
-
-export type NoteLink = {
+/** An external link. */
+export type Link = {
   href: string;
   label: string;
 };
 
+/** A media collection section (watching / reading). */
+export type Shelf = {
+  stats?: Record<string, number>;
+  posters: Poster[];
+  notes: Link[];
+};
+
+/** Root content schema for the portfolio. */
 export type SiteContent = {
   siteTitle: string;
   intro?: string;
-  contact?: {
-    email?: string;
-    twitter?: string;
-  };
-  working: ContentItem[];
-  writing: ContentItem[];
-  watching: ContentItem[];
-  watchingStats?: WatchingStats;
-  watchingPosters: PosterItem[];
-  watchingNotes: NoteLink[];
-  reading: ContentItem[];
-  readingStats?: ReadingStats;
-  readingPosters: PosterItem[];
-  readingNotes: NoteLink[];
+  contact?: { email?: string; twitter?: string };
+  working: Entry[];
+  writing: Entry[];
+  watching: Shelf;
+  reading: Shelf;
 };
 
-const source = rawContent as Partial<SiteContent>;
-
-const content: SiteContent = {
-  siteTitle: source.siteTitle ?? "",
-  intro: source.intro,
-  contact: source.contact,
-  working: source.working ?? [],
-  writing: source.writing ?? [],
-  watching: source.watching ?? [],
-  watchingStats: source.watchingStats,
-  watchingPosters: source.watchingPosters ?? [],
-  watchingNotes: source.watchingNotes ?? [],
-  reading: source.reading ?? [],
-  readingStats: source.readingStats,
-  readingPosters: source.readingPosters ?? [],
-  readingNotes: source.readingNotes ?? [],
-};
+const content = rawContent as unknown as SiteContent;
 
 export default content;

@@ -1,11 +1,11 @@
-import type { ContentItem } from "@/lib/content";
+import type { Entry } from "@/lib/content";
 import { externalLinkProps, splitLines, itemKey } from "@/lib/utils";
 
 export default function ItemDescription({
   item,
   highlightResearchTeam = false,
 }: {
-  item: ContentItem;
+  item: Entry;
   highlightResearchTeam?: boolean;
 }) {
   if (!item.description) {
