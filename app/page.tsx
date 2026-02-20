@@ -1,12 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import content from "@/lib/content";
-import { itemKey, splitLines } from "@/lib/utils";
 import Section from "./components/section";
-import ItemTitle from "./components/item-title";
-import ItemDescription from "./components/item-description";
 import PosterGrid from "./components/poster-grid";
-import NoteList from "./components/note-list";
 import LifeCounter from "./components/life-counter";
 import ExternalLink from "./components/external-link";
 import ArticleList from "./components/article-list";
@@ -18,7 +14,6 @@ const secondary = "text-zinc-600 dark:text-zinc-400";
 const linkHover = "hover:text-foreground transition-colors";
 
 export default function Home() {
-  const introTagline = splitLines(content.intro)[1];
   const email = content.contact?.email;
   const twitter = content.contact?.twitter;
 
@@ -28,10 +23,10 @@ export default function Home() {
         <header className="mb-16 sm:mb-24">
           {/* Avatar + Title */}
           <div className="relative">
-            <div className="absolute -top-8 -right-2 z-10 sm:-top-8 sm:right-4">
+            <div className="absolute -top-12 right-0 z-10 sm:-top-10 sm:right-4">
               <Avatar />
             </div>
-            <h1 className="text-[clamp(3rem,15vw,6rem)] font-bold tracking-tight leading-none">
+            <h1 className="text-[clamp(2.8rem,14vw,6rem)] font-bold tracking-tight leading-none whitespace-nowrap">
               {content.siteTitle}
             </h1>
           </div>
@@ -91,7 +86,8 @@ export default function Home() {
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <h3 className="text-foreground font-semibold text-lg">
-                    Research Lead, DODO
+                    Research Lead
+                    <span className="hidden sm:inline">, DODO</span>
                   </h3>
                   <p className={`mt-1 text-sm ${muted}`}>2021 – 2025</p>
                 </div>
@@ -128,7 +124,8 @@ export default function Home() {
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <h3 className="text-foreground font-semibold text-lg">
-                    Senior PR Manager, Tencent
+                    Senior PR Manager
+                    <span className="hidden sm:inline">, Tencent</span>
                   </h3>
                   <p className={`mt-1 text-sm ${muted}`}>2017 – 2020</p>
                 </div>
@@ -169,7 +166,8 @@ export default function Home() {
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <h3 className="text-foreground font-semibold text-lg">
-                    PR Manager, NetEase
+                    PR Manager
+                    <span className="hidden sm:inline">, NetEase</span>
                   </h3>
                   <p className={`mt-1 text-sm ${muted}`}>2014 – 2017</p>
                 </div>
@@ -206,55 +204,32 @@ export default function Home() {
         <Section id="writing" title="Writing">
           <div>
             <Image
-              src="/quote-note.png"
-              alt="Le besoin d'avoir raison, marque d'esprit vulgaire. / 加缪笔记"
+              src={content.writing.quote.image}
+              alt={content.writing.quote.text}
               width={800}
               height={500}
               sizes="(max-width: 640px) 100vw, 100%"
               className="w-full rounded-lg object-cover"
             />
-            <div className="mt-4 flex items-baseline justify-between">
+            <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-baseline sm:justify-between">
               <div>
                 <p className={`text-sm leading-relaxed ${secondary}`}>
-                  The need to be right is the mark of a vulgar mind.
+                  {content.writing.quote.text}
                 </p>
-                <p className={`mt-1 text-sm ${muted}`}>— Albert Camus</p>
+                <p className={`mt-1 text-sm ${muted}`}>
+                  — {content.writing.quote.author}
+                </p>
               </div>
               <ExternalLink
-                href="https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99"
-                className="text-sm shrink-0 ml-4"
+                href={content.writing.notionUrl}
+                className="text-sm shrink-0"
               >
                 Writer&apos;s Block
               </ExternalLink>
             </div>
 
             <div className="mt-8">
-              <ArticleList
-                articles={[
-                  {
-                    title: "Film Journal: Mikey and Nicky",
-                    date: "2025",
-                    href: "https://www.notion.so/Film-Journal-Mikey-and-Nicky-17acf26e6fb580198e13e04d5e674edf",
-                  },
-                  {
-                    title:
-                      "History of the Reception of The Bitter Tea of General Yen",
-                    date: "2024",
-                    href: "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=303cf26e6fb580268c94cdd01484b5ca&pm=s",
-                  },
-                  {
-                    title:
-                      "Exploring the Roles of Yingyu in Early Chinese Film History",
-                    date: "2024",
-                    href: "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=303cf26e6fb580d2bb0cfb07903c06a2&pm=s",
-                  },
-                  {
-                    title: "《如梦之梦》的梦里梦外",
-                    date: "2023",
-                    href: "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=17acf26e6fb580b392d7f2b6bbbff2e9&pm=s",
-                  },
-                ]}
-              />
+              <ArticleList articles={content.writing.articles} />
             </div>
           </div>
         </Section>
@@ -262,7 +237,7 @@ export default function Home() {
         <Section id="watching" title="Watching">
           {content.watching.posters.length > 0 && (
             <>
-              <div>
+              <div className="overflow-hidden">
                 {content.watching.stats && (
                   <p
                     className="text-[8rem] sm:text-[12rem] font-black tracking-tighter text-zinc-200 dark:text-zinc-800 leading-none"
@@ -288,43 +263,31 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="mt-8 flex items-center justify-between">
-                <span className="text-base font-semibold tracking-widest uppercase text-zinc-400 dark:text-zinc-500">
-                  2025 favorites
-                </span>
-                <span className="flex items-center gap-2 text-sm">
-                  <ExternalLink
-                    href="https://x.com/liuyaoyao_611/status/2010707878706102391?s=20"
-                    className="text-sm font-normal"
-                  >
-                    Part 1
-                  </ExternalLink>
-                  <span className={muted}>/</span>
-                  <ExternalLink
-                    href="https://x.com/liuyaoyao_611/status/2010710683462377953?s=20"
-                    className="text-sm font-normal"
-                  >
-                    Part 2
-                  </ExternalLink>
-                </span>
-              </div>
+              {content.watching.favorites?.map((fav) => (
+                <div key={fav.title} className="mt-8 flex items-center justify-between">
+                  <span className="text-sm sm:text-base font-semibold tracking-wider sm:tracking-widest uppercase text-zinc-400 dark:text-zinc-500">
+                    {fav.title}
+                  </span>
+                  <span className="flex items-center gap-2 text-sm">
+                    {fav.links.map((link, i) => (
+                      <span key={link.href} className="flex items-center gap-2">
+                        {i > 0 && <span className={muted}>/</span>}
+                        <ExternalLink href={link.href} className="text-sm font-normal">
+                          {link.label}
+                        </ExternalLink>
+                      </span>
+                    ))}
+                  </span>
+                </div>
+              ))}
 
-              <div className="mt-6">
-                <ArticleList
-                  articles={content.watching.notes.map((n) => ({
-                    title: n.label.replace(/↗$/, ""),
-                    date: n.date,
-                    href: n.href,
-                  }))}
-                />
-              </div>
             </>
           )}
         </Section>
 
         <Section id="reading" title="Reading">
           {content.reading.posters.length > 0 && (
-            <div>
+            <div className="overflow-hidden">
               {content.reading.stats && (
                 <p
                   className="text-[8rem] sm:text-[12rem] font-black tracking-tighter text-zinc-200 dark:text-zinc-800 leading-none"
@@ -351,18 +314,12 @@ export default function Home() {
             </div>
           )}
 
-          <div className="mt-6">
-            <ArticleList
-              articles={content.reading.notes.map((n) => ({
-                title: n.label.replace(/↗$/, ""),
-                date: n.date,
-                href: n.href,
-              }))}
-            />
-          </div>
+          {content.reading.articles && content.reading.articles.length > 0 && (
+            <div className="mt-6">
+              <ArticleList articles={content.reading.articles} />
+            </div>
+          )}
         </Section>
-
-        <footer className="pt-8" />
       </main>
     </div>
   );
