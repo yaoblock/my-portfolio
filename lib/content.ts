@@ -5,7 +5,10 @@ export type Entry = {
   title: string;
   url?: string;
   description?: string;
+  period?: string;
   layout?: "quote";
+  logo?: string;
+  tags?: string[];
 };
 
 /** A poster card (book cover, movie poster, etc.). */

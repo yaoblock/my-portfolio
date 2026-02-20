@@ -80,15 +80,69 @@ export default function Home() {
         </header>
 
         <Section id="working" title="Working">
-          <ul className="space-y-4 text-zinc-700 dark:text-zinc-300">
-            {content.working.map((item) => (
-              <li key={itemKey(item)}>
-                <span className="text-foreground">
-                  <ItemTitle item={item} />
-                </span>
-                <ItemDescription item={item} highlightResearchTeam />
-              </li>
-            ))}
+          <ul className="divide-y divide-zinc-200 dark:divide-zinc-800">
+            {/* DODO */}
+            <li className="py-8 first:pt-0">
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <h3 className="text-foreground font-semibold text-lg">
+                    PR Director, DODO
+                  </h3>
+                  <p className={`mt-1 text-sm ${muted}`}>2021 – 2025</p>
+                </div>
+                <Image src="/logo/dodo.png" alt="" width={120} height={40} className="h-14 w-auto max-w-32 object-contain shrink-0 dark:invert" />
+              </div>
+              <p className={`mt-3 leading-relaxed ${secondary}`}>
+                DODO - A decentralized exchange backed by Coinbase Ventures, with $141B+ in trading volume and 3M+ users. I built <a href="https://dodotopia.notion.site/Dr-DODO-is-Researching-6c18bbca8ea0465ab94a61ff5d2d7682" target="_blank" rel="noopener noreferrer" className="not-italic font-semibold text-foreground no-underline hover:text-foreground">Dr.DODO<sup className="text-[0.6em] ml-0.5 no-underline">↗</sup></a> from scratch — a DeFi research brand and 6-person team that published industry reports with protocols like CowSwap and leading Market Makers. Hosted AMAs, spoke on conference panels, and advised early-stage crypto funds on due diligence.
+              </p>
+              <div className={`mt-3 flex flex-wrap gap-x-3 text-sm tracking-wide ${muted}`}>
+                <span>#DeFi Research</span>
+                <span>#Content Strategy</span>
+                <span>#Public Speaking</span>
+              </div>
+            </li>
+
+            {/* Tencent */}
+            <li className="py-8">
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <h3 className="text-foreground font-semibold text-lg">
+                    Senior PR Manager, Tencent
+                  </h3>
+                  <p className={`mt-1 text-sm ${muted}`}>2017 – 2020</p>
+                </div>
+                <Image src="/logo/tencent.avif" alt="" width={120} height={40} className="h-14 w-auto max-w-32 object-contain shrink-0 dark:invert" />
+              </div>
+              <p className={`mt-3 leading-relaxed ${secondary}`}>
+                Led a 6-person PR team, 100+ campaigns. Headed the China launch of <em className="not-italic font-semibold text-foreground">PUBG</em> (绝地求生) — the game faced massive media and regulatory pressure, but we turned it around through crisis PR and media strategy, got it to market, and won a company-level award. Also ran <em className="not-italic font-semibold text-foreground">Naruto Mobile</em> (火影忍者) PR for two years: 15.3M new users, 200% KPI.
+              </p>
+              <div className={`mt-3 flex flex-wrap gap-x-3 text-sm tracking-wide ${muted}`}>
+                <span>#Crisis PR</span>
+                <span>#Media Relations</span>
+                <span>#Campaign Strategy</span>
+              </div>
+            </li>
+
+            {/* NetEase */}
+            <li className="py-8">
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <h3 className="text-foreground font-semibold text-lg">
+                    PR Manager, NetEase
+                  </h3>
+                  <p className={`mt-1 text-sm ${muted}`}>2014 – 2017</p>
+                </div>
+                <Image src="/logo/netease.png" alt="" width={120} height={40} className="h-14 w-auto max-w-32 object-contain shrink-0 dark:invert" />
+              </div>
+              <p className={`mt-3 leading-relaxed ${secondary}`}>
+                Ran PR and brand marketing for <em className="not-italic font-semibold text-foreground">Fantasy Westward Journey</em> (梦幻西游) — one of China's most iconic online games. Partnered with top idols like TFBOYS and turned the game IP into film, theater, and animation. Wrote for company leadership and shaped its public narrative. As one of a 5-person founding team, built NetEase Games' social-media operation from zero.
+              </p>
+              <div className={`mt-3 flex flex-wrap gap-x-3 text-sm tracking-wide ${muted}`}>
+                <span>#Brand Marketing</span>
+                <span>#IP Collaboration</span>
+                <span>#Executive Communications</span>
+              </div>
+            </li>
           </ul>
         </Section>
 
