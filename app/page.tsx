@@ -22,11 +22,11 @@ export default function Home() {
       <main className="mx-auto max-w-2xl px-6 py-24 sm:px-8">
         <header className="mb-16 sm:mb-24">
           {/* Avatar + Title */}
-          <div className="relative">
+          <div className="relative group/header">
             <div className="absolute -top-12 right-0 z-10 sm:-top-10 sm:right-4">
               <Avatar />
             </div>
-            <h1 className="text-[clamp(2.8rem,14vw,6rem)] font-bold tracking-tight leading-none whitespace-nowrap">
+            <h1 className="glitch-on-hover text-[clamp(2.8rem,14vw,6rem)] font-bold tracking-tight leading-none whitespace-nowrap">
               {content.siteTitle}
             </h1>
           </div>

@@ -24,3 +24,39 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+/* Glitch effect on title when avatar is hovered */
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 0 #ff0000, -2px 0 #00ffff;
+    transform: translate(0);
+  }
+  20% {
+    text-shadow: -2px -1px #ff0000, 2px 1px #00ffff;
+    transform: translate(-1px, 1px);
+  }
+  40% {
+    text-shadow: 2px 1px #ff0000, -1px -2px #00ffff;
+    transform: translate(1px, -1px);
+  }
+  60% {
+    text-shadow: -1px 2px #ff0000, 1px -1px #00ffff;
+    transform: translate(-1px, 0);
+  }
+  80% {
+    text-shadow: 1px -1px #ff0000, -2px 2px #00ffff;
+    transform: translate(1px, 1px);
+  }
+  100% {
+    text-shadow: none;
+    transform: translate(0);
+  }
+}
+
+.glitch-on-hover {
+  animation: none;
+}
+
+.group\/header:hover .glitch-on-hover {
+  animation: glitch 0.3s ease-in-out infinite;
+}
