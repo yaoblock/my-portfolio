@@ -5,32 +5,7 @@
     "email": "yaoyaoliu611@gmail.com",
     "twitter": "https://x.com/liuyaoyao_611"
   },
-  "working": [
-    {
-      "title": "PR Director, DODO",
-      "url": "https://dodotopia.notion.site/Dr-DODO-is-Researching-6c18bbca8ea0465ab94a61ff5d2d7682",
-      "period": "2021 – 2025",
-      "description": "DODO — a multi-chain DEX with $141B+ trading volume and 3M+ users. Built and led a 6-person team that defined the project's public voice — from industry reports co-authored with CowSwap and Market Makers, to AMAs and conference panels. Also advised early-stage crypto funds on investment due diligence.",
-      "logo": "/logo/dodo.png",
-      "tags": ["DeFi Research", "Industry Narrative", "Investment Advisory"]
-    },
-    {
-      "title": "Senior PR Manager, Tencent",
-      "url": "",
-      "period": "2017 – 2020",
-      "description": "Led a 6-person PR team, 100+ campaigns. Headed the China launch of PUBG (绝地求生) — the game faced massive media and regulatory pressure, but we turned it around through crisis PR and media strategy, got it to market, and won a company-level award. Also ran Naruto Mobile (火影忍者) PR for two years: 15.3M new users, 200% KPI.",
-      "logo": "/logo/tencent.avif",
-      "tags": ["Crisis PR", "Media Relations", "Campaign Strategy"]
-    },
-    {
-      "title": "PR Manager, NetEase",
-      "url": "",
-      "period": "2014 – 2017",
-      "description": "Ran PR and brand marketing for Fantasy Westward Journey (梦幻西游) — one of China's most iconic online games. Partnered with top idols like TFBOYS and turned the game IP into film, theater, and animation. Wrote for company leadership and shaped its public narrative. As one of a 5-person founding team, built NetEase Games' social-media operation from zero.",
-      "logo": "/logo/netease.png",
-      "tags": ["Brand Marketing", "IP Collaboration", "Executive Communications"]
-    }
-  ],
+  "working": [],
   "writing": [
     {
       "title": "Writer's Block",
