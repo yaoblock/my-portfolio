@@ -201,6 +201,7 @@ export default function Home() {
           </ul>
         </Section>
 
+        {/* TODO: Writing section content is placeholder — replace with real articles */}
         <Section id="writing" title="Writing">
           <div>
             <Image
@@ -281,6 +282,11 @@ export default function Home() {
                 </div>
               ))}
 
+              {content.watching.articles && content.watching.articles.length > 0 && (
+                <div className="mt-6">
+                  <ArticleList articles={content.watching.articles} />
+                </div>
+              )}
             </>
           )}
         </Section>
