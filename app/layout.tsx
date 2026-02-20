@@ -4,25 +4,26 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const SITE_URL = "https://yaoyao.io";
+const SITE_URL = "https://yaoblock.com";
+
+const DESCRIPTION =
+  "A PR manager who shipped games at Tencent and NetEase, then fell into the crypto rabbit hole. Studied drama at Nanjing University and cinema at New York University — no cut, still rolling, scene unknown.";
 
 export const metadata: Metadata = {
-  title: "YAO Writer's Block",
-  description:
-    "Gaming, crypto research, cinema studies. Working, writing, watching, reading.",
+  title: "Yao - Writer's Block",
+  description: DESCRIPTION,
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: "/" },
   openGraph: {
-    title: "YAO Writer's Block",
-    description:
-      "Gaming, crypto research, cinema studies. Working, writing, watching, reading.",
+    title: "Writer's Block",
+    description: DESCRIPTION,
     url: SITE_URL,
     siteName: "Writer's Block",
     type: "website",
     locale: "en_US",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@liuyaoyao_611",
     creator: "@liuyaoyao_611",
   },
@@ -39,10 +40,10 @@ export default function RootLayout({
     "@type": "ProfilePage",
     mainEntity: {
       "@type": "Person",
-      name: "YAO",
+      name: "Yao",
       url: SITE_URL,
       sameAs: ["https://x.com/liuyaoyao_611"],
-      jobTitle: "Crypto Researcher & Writer",
+      jobTitle: "PR Manager, NetEase, Tencent, DODO",
     },
   };
 
