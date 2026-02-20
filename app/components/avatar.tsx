@@ -9,6 +9,7 @@ export default function Avatar() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const rafRef = useRef<number | null>(null);
+  const drawNoiseRef = useRef<() => void>(null);
   const [hovered, setHovered] = useState(false);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
 
@@ -31,8 +32,12 @@ export default function Avatar() {
     }
 
     ctx.putImageData(imageData, 0, 0);
-    rafRef.current = requestAnimationFrame(drawNoise);
+    rafRef.current = requestAnimationFrame(() => drawNoiseRef.current?.());
   }, []);
+
+  useEffect(() => {
+    drawNoiseRef.current = drawNoise;
+  }, [drawNoise]);
 
   useEffect(() => {
     if (hovered) {
