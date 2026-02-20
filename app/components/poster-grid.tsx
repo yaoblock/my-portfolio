@@ -16,14 +16,14 @@ export default function PosterGrid({
     <div className="grid grid-cols-3 gap-3 sm:gap-6">
       {posters.map((poster) => (
         <figure key={posterKey(poster)} className="group">
-          <div className="relative aspect-[2/3] overflow-hidden rounded bg-zinc-200 dark:bg-zinc-800">
+          <div className="relative aspect-[2/3] overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900">
             <Image
               src={poster.image}
               alt={alt(poster)}
               fill
               referrerPolicy="no-referrer"
               sizes="(min-width: 640px) 180px, 30vw"
-              className="object-cover transition-transform group-hover:scale-105"
+              className="object-cover"
             />
           </div>
           <figcaption className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
