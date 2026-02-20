@@ -18,37 +18,41 @@
     "stats": { "watched": 1382, "wish": 563 },
     "posters": [
       {
-        "title": "下班后",
-        "subtitle": "After Hours · Martin Scorsese",
+        "title": "After Hours",
+        "subtitle": "Martin Scorsese",
         "image": "/movies/after-hours.jpg"
       },
       {
-        "title": "群鸟",
-        "subtitle": "The Birds · Hitchcock",
+        "title": "The Birds",
+        "subtitle": "Alfred Hitchcock",
         "image": "/movies/the-birds.jpg"
       },
       {
-        "title": "金的音像店",
-        "subtitle": "Kim's Video · David Redmon & Ashley Sabin",
+        "title": "Kim's Video",
+        "subtitle": "David Redmon & Ashley Sabin",
         "image": "/movies/kims-video.jpg"
       }
     ],
     "notes": [
       {
         "href": "https://www.notion.so/Film-Journal-Mikey-and-Nicky-17acf26e6fb580198e13e04d5e674edf",
-        "label": "Film Journal: Mikey and Nicky↗"
+        "label": "Film Journal: Mikey and Nicky",
+        "date": "2025"
       },
       {
         "href": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=303cf26e6fb580268c94cdd01484b5ca&pm=s",
-        "label": "History of the Reception of the film The Bitter Tea of General Yen↗"
+        "label": "History of the Reception of the film The Bitter Tea of General Yen",
+        "date": "2024"
       },
       {
         "href": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=303cf26e6fb580d2bb0cfb07903c06a2&pm=s",
-        "label": "A Preliminary Study：Exploring the Roles of Yingyu in Early Chinese Film History↗"
+        "label": "Exploring the Roles of Yingyu in Early Chinese Film History",
+        "date": "2024"
       },
       {
         "href": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=17acf26e6fb580b392d7f2b6bbbff2e9&pm=s",
-        "label": "《如梦之梦》的梦里梦外↗"
+        "label": "《如梦之梦》的梦里梦外",
+        "date": "2023"
       }
     ]
   },
@@ -57,7 +61,7 @@
     "posters": [
       {
         "title": "货币的非国家化",
-        "subtitle": "[美] 弗里德里希·冯·哈耶克 · 姚中秋 译",
+        "subtitle": "[美] 弗里德里希·冯·哈耶克",
         "image": "/books/denationalization-of-money.png"
       },
       {
@@ -67,34 +71,40 @@
       },
       {
         "title": "才女之累：李清照及其接受史",
-        "subtitle": "[美] 艾朗诺 · 夏丽丽、赵惠俊 译",
+        "subtitle": "[美] 艾朗诺",
         "image": "/books/burden-of-female-talent.png"
       }
     ],
     "notes": [
       {
         "href": "https://www.notion.so/2022-Good-Reading-for-Hard-Times-17acf26e6fb580acbbe5d5fc09a6038b",
-        "label": "2022书单｜Good Reading for Hard Times↗"
+        "label": "2022 书单: Good Reading for Hard Times",
+        "date": "2022"
       },
       {
         "href": "https://www.notion.so/17acf26e6fb580819a94dfe30a7b9958",
-        "label": "沿着阅读的方向↗"
+        "label": "沿着阅读的方向",
+        "date": "2023"
       },
       {
         "href": "https://www.notion.so/17acf26e6fb5804e8fa4fbda24b3a17f",
-        "label": "春来不是读书天↗"
+        "label": "春来不是读书天",
+        "date": "2022"
       },
       {
         "href": "https://www.notion.so/17acf26e6fb580a180f4f475506a070f",
-        "label": "放假了，读点好玩的书吧↗"
+        "label": "放假了，读点好玩的书吧",
+        "date": "2021"
       },
       {
         "href": "https://www.notion.so/17acf26e6fb58032b85eee661e6ece17?v=17acf26e6fb581458469000c30560894&p=17acf26e6fb580dd9518ca83a36ccd41&pm=s",
-        "label": "2020年，我的读书小记↗"
+        "label": "2020年，我的读书小记",
+        "date": "2020"
       },
       {
         "href": "https://www.notion.so/17acf26e6fb58032b85eee661e6ece17?v=17acf26e6fb581458469000c30560894&p=17acf26e6fb58036b661d2d407979c0b&pm=s",
-        "label": "无法知晓的自然↗"
+        "label": "无法知晓的自然",
+        "date": "2021"
       }
     ]
   }

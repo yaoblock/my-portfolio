@@ -22,6 +22,7 @@ export type Poster = {
 export type Link = {
   href: string;
   label: string;
+  date?: string;
 };
 
 /** A media collection section (watching / reading). */
