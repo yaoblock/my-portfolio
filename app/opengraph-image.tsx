@@ -1,8 +1,11 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Writer's Block — YAO";
+export const alt =
+  "I AM YAO. A PR manager who now opens pull requests. No cut. Still rolling. Scene unknown.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+
+const SITE_URL = "https://yaoblock.com";
 
 export default async function OGImage() {
   return new ImageResponse(
@@ -12,47 +15,68 @@ export default async function OGImage() {
           width: "100%",
           height: "100%",
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          padding: "80px",
-          background: "#ffffff",
+          alignItems: "center",
+          justifyContent: "space-between",
+          padding: "72px 80px",
+          background: "#000000",
+          gap: 72,
         }}
       >
         <div
           style={{
             display: "flex",
-            fontSize: 96,
-            fontWeight: 700,
-            color: "#171717",
-            letterSpacing: "-0.04em",
-            lineHeight: 1,
+            flexDirection: "column",
+            gap: 28,
+            flex: 1,
           }}
         >
-          Writer&apos;s Block
+          <div
+            style={{
+              fontSize: 88,
+              fontWeight: 900,
+              color: "#fafafa",
+              letterSpacing: "-0.04em",
+              lineHeight: 1,
+            }}
+          >
+            I AM YAO.
+          </div>
+          <div
+            style={{
+              fontSize: 28,
+              fontWeight: 600,
+              color: "#a1a1aa",
+              letterSpacing: "-0.02em",
+              lineHeight: 1.3,
+            }}
+          >
+            A PR manager who now opens pull requests.
+          </div>
+          <div
+            style={{
+              fontSize: 24,
+              fontWeight: 400,
+              color: "#71717a",
+              fontStyle: "italic",
+              letterSpacing: "-0.01em",
+              lineHeight: 1.4,
+            }}
+          >
+            No cut. Still rolling. Scene unknown.
+          </div>
         </div>
-        <div
+        <img
+          src={`${SITE_URL}/avatar.png`}
+          alt=""
+          width={220}
+          height={220}
           style={{
-            display: "flex",
-            marginTop: 32,
-            fontSize: 28,
-            fontWeight: 700,
-            color: "#171717",
-            letterSpacing: "-0.04em",
+            borderRadius: "50%",
+            objectFit: "cover",
+            border: "4px solid #1a1a1a",
+            flexShrink: 0,
           }}
-        >
-          I AM YAO.
-        </div>
-        <div
-          style={{
-            display: "flex",
-            marginTop: 12,
-            fontSize: 22,
-            color: "#a1a1aa",
-            lineHeight: 1.5,
-          }}
-        >
-          PR · Crypto · Cinema · Nanjing University · NYU
-        </div>
+        />
       </div>
     ),
     { ...size }
