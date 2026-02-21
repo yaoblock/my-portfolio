@@ -1,79 +1,96 @@
 {
   "siteTitle": "Writer's Block",
-  "intro": "6yrs in Gaming | Crypto since 2019 | Cinema Studies @NYU\nThe World as Method",
   "contact": {
     "email": "yaoyaoliu611@gmail.com",
     "twitter": "https://x.com/liuyaoyao_611"
   },
-  "working": [
-    {
-      "title": "DODO DEX",
-      "url": "https://dodotopia.notion.site/Dr-DODO-is-Researching-6c18bbca8ea0465ab94a61ff5d2d7682",
-      "description": "Research Lead | 2021.7 – 2024.6\n*Built the Research team from 0→1\n*Served as an independent investment advisor"
+  "writing": {
+    "quote": {
+      "image": "/quote-note.png",
+      "text": "The need to be right is the mark of a vulgar mind.",
+      "author": "Albert Camus"
     },
-    {
-      "title": "Tencent",
-      "url": "",
-      "description": "PR Communications Manager | 2017.6 – 2020.4\nLed PR strategy for PUBG (绝地求生) · Naruto Mobile (火影忍者) · Contra (魂斗罗) · Hitori no Shita (一人之下)"
-    },
-    {
-      "title": "NetEase",
-      "url": "",
-      "description": "Product Marketing Manager | 2014.11 – 2017.6\n*Drove marketing and PR for Fantasy Westward Journey (梦幻西游)\n*Built game social media playbook from 0→1"
-    }
-  ],
-  "writing": [
-    {
-      "title": "Writer's Block",
-      "url": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99",
-      "description": "The need to be right is the mark of a vulgar mind.--Albert Camus",
-      "layout": "quote"
-    }
-  ],
+    "notionUrl": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99",
+    "articles": [
+      {
+        "title": "TODO: Film Journal: Mikey and Nicky",
+        "date": "2025.01",
+        "href": "https://www.notion.so/Film-Journal-Mikey-and-Nicky-17acf26e6fb580198e13e04d5e674edf"
+      },
+      {
+        "title": "TODO: History of the Reception of The Bitter Tea of General Yen",
+        "date": "2024.12",
+        "href": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=303cf26e6fb580268c94cdd01484b5ca&pm=s"
+      },
+      {
+        "title": "TODO: Exploring the Roles of Yingyu in Early Chinese Film History",
+        "date": "2024.05",
+        "href": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=303cf26e6fb580d2bb0cfb07903c06a2&pm=s"
+      },
+      {
+        "title": "TODO: 《如梦之梦》的梦里梦外",
+        "date": "2023.08",
+        "href": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=17acf26e6fb580b392d7f2b6bbbff2e9&pm=s"
+      }
+    ]
+  },
   "watching": {
-    "stats": { "watched": 1382, "wish": 563 },
+    "stats": { "watched": 1382, "wishlist": 563 },
     "posters": [
       {
-        "title": "下班后",
-        "subtitle": "After Hours · Martin Scorsese",
+        "title": "After Hours",
+        "subtitle": "Martin Scorsese",
         "image": "/movies/after-hours.jpg"
       },
       {
-        "title": "群鸟",
-        "subtitle": "The Birds · Hitchcock",
+        "title": "The Birds",
+        "subtitle": "Alfred Hitchcock",
         "image": "/movies/the-birds.jpg"
       },
       {
-        "title": "金的音像店",
-        "subtitle": "Kim's Video · David Redmon & Ashley Sabin",
+        "title": "Kim's Video",
+        "subtitle": "David Redmon & Ashley Sabin",
         "image": "/movies/kims-video.jpg"
       }
     ],
-    "notes": [
+    "favorites": [
       {
-        "href": "https://www.notion.so/Film-Journal-Mikey-and-Nicky-17acf26e6fb580198e13e04d5e674edf",
-        "label": "Film Journal: Mikey and Nicky↗"
+        "title": "2025 favorites",
+        "links": [
+          { "label": "Part 1", "href": "https://x.com/liuyaoyao_611/status/2010707878706102391?s=20" },
+          { "label": "Part 2", "href": "https://x.com/liuyaoyao_611/status/2010710683462377953?s=20" }
+        ]
+      }
+    ],
+    "articles": [
+      {
+        "title": "Film Journal: Mikey and Nicky",
+        "date": "2025.01",
+        "href": "https://www.notion.so/Film-Journal-Mikey-and-Nicky-17acf26e6fb580198e13e04d5e674edf"
       },
       {
-        "href": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=303cf26e6fb580268c94cdd01484b5ca&pm=s",
-        "label": "History of the Reception of the film The Bitter Tea of General Yen↗"
+        "title": "History of the Reception of the film The Bitter Tea of General Yen",
+        "date": "2024.12",
+        "href": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=303cf26e6fb580268c94cdd01484b5ca&pm=s"
       },
       {
-        "href": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=303cf26e6fb580d2bb0cfb07903c06a2&pm=s",
-        "label": "A Preliminary Study：Exploring the Roles of Yingyu in Early Chinese Film History↗"
+        "title": "Exploring the Roles of Yingyu in Early Chinese Film History",
+        "date": "2024.05",
+        "href": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=303cf26e6fb580d2bb0cfb07903c06a2&pm=s"
       },
       {
-        "href": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=17acf26e6fb580b392d7f2b6bbbff2e9&pm=s",
-        "label": "《如梦之梦》的梦里梦外↗"
+        "title": "《如梦之梦》的梦里梦外",
+        "date": "2023.08",
+        "href": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99&p=17acf26e6fb580b392d7f2b6bbbff2e9&pm=s"
       }
     ]
   },
   "reading": {
-    "stats": { "read": 419, "wish": 332, "reading": 46 },
+    "stats": { "read": 419, "wishlist": 332 },
     "posters": [
       {
         "title": "货币的非国家化",
-        "subtitle": "[美] 弗里德里希·冯·哈耶克 · 姚中秋 译",
+        "subtitle": "[美] 弗里德里希·冯·哈耶克",
         "image": "/books/denationalization-of-money.png"
       },
       {
@@ -83,34 +100,40 @@
       },
       {
         "title": "才女之累：李清照及其接受史",
-        "subtitle": "[美] 艾朗诺 · 夏丽丽、赵惠俊 译",
+        "subtitle": "[美] 艾朗诺",
         "image": "/books/burden-of-female-talent.png"
       }
     ],
-    "notes": [
+    "articles": [
       {
-        "href": "https://www.notion.so/2022-Good-Reading-for-Hard-Times-17acf26e6fb580acbbe5d5fc09a6038b",
-        "label": "2022书单｜Good Reading for Hard Times↗"
+        "title": "2022 书单: Good Reading for Hard Times",
+        "date": "2022.12",
+        "href": "https://www.notion.so/2022-Good-Reading-for-Hard-Times-17acf26e6fb580acbbe5d5fc09a6038b"
       },
       {
-        "href": "https://www.notion.so/17acf26e6fb580819a94dfe30a7b9958",
-        "label": "沿着阅读的方向↗"
+        "title": "沿着阅读的方向",
+        "date": "2023.06",
+        "href": "https://www.notion.so/17acf26e6fb580819a94dfe30a7b9958"
       },
       {
-        "href": "https://www.notion.so/17acf26e6fb5804e8fa4fbda24b3a17f",
-        "label": "春来不是读书天↗"
+        "title": "春来不是读书天",
+        "date": "2022.04",
+        "href": "https://www.notion.so/17acf26e6fb5804e8fa4fbda24b3a17f"
       },
       {
-        "href": "https://www.notion.so/17acf26e6fb580a180f4f475506a070f",
-        "label": "放假了，读点好玩的书吧↗"
+        "title": "放假了，读点好玩的书吧",
+        "date": "2021.07",
+        "href": "https://www.notion.so/17acf26e6fb580a180f4f475506a070f"
       },
       {
-        "href": "https://www.notion.so/17acf26e6fb58032b85eee661e6ece17?v=17acf26e6fb581458469000c30560894&p=17acf26e6fb580dd9518ca83a36ccd41&pm=s",
-        "label": "2020年，我的读书小记↗"
+        "title": "2020年，我的读书小记",
+        "date": "2020.12",
+        "href": "https://www.notion.so/17acf26e6fb58032b85eee661e6ece17?v=17acf26e6fb581458469000c30560894&p=17acf26e6fb580dd9518ca83a36ccd41&pm=s"
       },
       {
-        "href": "https://www.notion.so/17acf26e6fb58032b85eee661e6ece17?v=17acf26e6fb581458469000c30560894&p=17acf26e6fb58036b661d2d407979c0b&pm=s",
-        "label": "无法知晓的自然↗"
+        "title": "无法知晓的自然",
+        "date": "2021.03",
+        "href": "https://www.notion.so/17acf26e6fb58032b85eee661e6ece17?v=17acf26e6fb581458469000c30560894&p=17acf26e6fb58036b661d2d407979c0b&pm=s"
       }
     ]
   }
