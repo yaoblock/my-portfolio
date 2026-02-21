@@ -1,1 +1,142 @@
-{"siteTitle":"Writer's Block","contact":{"email":"yaoyaoliu611@gmail.com","twitter":"https://x.com/liuyaoyao_611"},"writing":{"quote":{"image":"/quote-note.png","text":"The need to be right is the mark of a vulgar mind.","author":"Albert Camus"},"notionUrl":"https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99","articles":[{"title":"Hi 豆瓣十五年","date":"2024.06","href":"https://jasper-hockey-6ce.notion.site/Hi-17acf26e6fb580408e93c4100d8ad6ee"},{"title":"我们与月亮的距离","date":"2024.03","href":"https://jasper-hockey-6ce.notion.site/17acf26e6fb58052b61deb2029844b9d"},{"title":"冰在雪之前消逝，雪在冰之前消融","date":"2023.12","href":"https://jasper-hockey-6ce.notion.site/a1bafaf90dc54aaeb339619892357d45"},{"title":"祛魅做市商","date":"2023.08","href":"https://jasper-hockey-6ce.notion.site/305cf26e6fb5805ea0a2c59481f5ecbf"}]},"watching":{"stats":{"watched":1382,"wishlist":563},"posters":[{"title":"After Hours","subtitle":"Martin Scorsese","image":"/movies/after-hours.jpg"},{"title":"The Birds","subtitle":"Alfred Hitchcock","image":"/movies/the-birds.jpg"},{"title":"Kim's Video","subtitle":"David Redmon & Ashley Sabin","image":"/movies/kims-video.jpg"}],"favorites":[{"title":"2025 favorites","links":[{"label":"Part 1","href":"https://x.com/liuyaoyao_611/status/2010707878706102391?s=20"},{"label":"Part 2","href":"https://x.com/liuyaoyao_611/status/2010710683462377953?s=20"}]}],"articles":[{"title":"Exploring the Roles of Yingyu in Early Chinese Film History","date":"2024.05","href":"https://jasper-hockey-6ce.notion.site/A-Preliminary-Study-Exploring-the-Roles-of-Yingyu-in-Early-Chinese-Film-History-303cf26e6fb580d2bb0cfb07903c06a2"},{"title":"History of the Reception of the film The Bitter Tea of General Yen","date":"2024.12","href":"https://jasper-hockey-6ce.notion.site/History-of-the-Reception-of-the-film-The-Bitter-Tea-of-General-Yen-303cf26e6fb580268c94cdd01484b5ca"},{"title":"Film Journal: Mikey and Nicky","date":"2025.01","href":"https://jasper-hockey-6ce.notion.site/Film-Journal-Mikey-and-Nicky-17acf26e6fb580198e13e04d5e674edf"},{"title":"《如梦之梦》的梦里梦外","date":"2023.08","href":"https://jasper-hockey-6ce.notion.site/17acf26e6fb580b392d7f2b6bbbff2e9"}]},"reading":{"stats":{"read":419,"wishlist":332},"posters":[{"title":"货币的非国家化","subtitle":"[美] 弗里德里希·冯·哈耶克","image":"/books/denationalization-of-money.png"},{"title":"超文本和超链接","subtitle":"李怡","image":"/books/hypertext-and-hyperlinks.png"},{"title":"才女之累：李清照及其接受史","subtitle":"[美] 艾朗诺","image":"/books/burden-of-female-talent.png"}],"articles":[{"title":"2022 书单 Good Reading for Hard Times","date":"2022.12","href":"https://jasper-hockey-6ce.notion.site/2022-Good-Reading-for-Hard-Times-17acf26e6fb580acbbe5d5fc09a6038b"},{"title":"春来不是读书天","date":"2022.04","href":"https://jasper-hockey-6ce.notion.site/17acf26e6fb5804e8fa4fbda24b3a17f"},{"title":"放假了，读点好玩的书吧","date":"2021.07","href":"https://jasper-hockey-6ce.notion.site/17acf26e6fb580a180f4f475506a070f"},{"title":"2020 年，我的读书小记","date":"2020.12","href":"https://jasper-hockey-6ce.notion.site/2020-17acf26e6fb580dd9518ca83a36ccd41"}]}}
+{
+  "siteTitle": "Writer's Block",
+  "contact": {
+    "email": "yaoyaoliu611@gmail.com",
+    "twitter": "https://x.com/liuyaoyao_611"
+  },
+  "writing": {
+    "quote": {
+      "image": "/quote-note.png",
+      "text": "The need to be right is the mark of a vulgar mind.",
+      "author": "Albert Camus"
+    },
+    "notionUrl": "https://www.notion.so/059c248d9d2f493dbcbeb53f9f7f88ef?v=e4f0ae46b0d149a29683079c35ceea99",
+    "articles": [
+      {
+        "title": "Hi 豆瓣十五年",
+        "date": "2024.06",
+        "href": "https://jasper-hockey-6ce.notion.site/Hi-17acf26e6fb580408e93c4100d8ad6ee"
+      },
+      {
+        "title": "我们与月亮的距离",
+        "date": "2024.03",
+        "href": "https://jasper-hockey-6ce.notion.site/17acf26e6fb58052b61deb2029844b9d"
+      },
+      {
+        "title": "冰在雪之前消逝，雪在冰之前消融",
+        "date": "2023.12",
+        "href": "https://jasper-hockey-6ce.notion.site/a1bafaf90dc54aaeb339619892357d45"
+      },
+      {
+        "title": "祛魅做市商",
+        "date": "2023.08",
+        "href": "https://jasper-hockey-6ce.notion.site/305cf26e6fb5805ea0a2c59481f5ecbf"
+      }
+    ]
+  },
+  "watching": {
+    "stats": {
+      "watched": 1382,
+      "wishlist": 563
+    },
+    "posters": [
+      {
+        "title": "After Hours",
+        "subtitle": "Martin Scorsese",
+        "image": "/movies/after-hours.jpg"
+      },
+      {
+        "title": "The Birds",
+        "subtitle": "Alfred Hitchcock",
+        "image": "/movies/the-birds.jpg"
+      },
+      {
+        "title": "Kim's Video",
+        "subtitle": "David Redmon & Ashley Sabin",
+        "image": "/movies/kims-video.jpg"
+      }
+    ],
+    "favorites": [
+      {
+        "title": "2025 favorites",
+        "links": [
+          {
+            "label": "Part 1",
+            "href": "https://x.com/liuyaoyao_611/status/2010707878706102391?s=20"
+          },
+          {
+            "label": "Part 2",
+            "href": "https://x.com/liuyaoyao_611/status/2010710683462377953?s=20"
+          }
+        ]
+      }
+    ],
+    "articles": [
+      {
+        "title": "Exploring the Roles of Yingyu in Early Chinese Film History",
+        "date": "2024.05",
+        "href": "https://jasper-hockey-6ce.notion.site/A-Preliminary-Study-Exploring-the-Roles-of-Yingyu-in-Early-Chinese-Film-History-303cf26e6fb580d2bb0cfb07903c06a2"
+      },
+      {
+        "title": "History of the Reception of the film The Bitter Tea of General Yen",
+        "date": "2024.12",
+        "href": "https://jasper-hockey-6ce.notion.site/History-of-the-Reception-of-the-film-The-Bitter-Tea-of-General-Yen-303cf26e6fb580268c94cdd01484b5ca"
+      },
+      {
+        "title": "Film Journal: Mikey and Nicky",
+        "date": "2025.01",
+        "href": "https://jasper-hockey-6ce.notion.site/Film-Journal-Mikey-and-Nicky-17acf26e6fb580198e13e04d5e674edf"
+      },
+      {
+        "title": "《如梦之梦》的梦里梦外",
+        "date": "2023.08",
+        "href": "https://jasper-hockey-6ce.notion.site/17acf26e6fb580b392d7f2b6bbbff2e9"
+      }
+    ]
+  },
+  "reading": {
+    "stats": {
+      "read": 419,
+      "wishlist": 332
+    },
+    "posters": [
+      {
+        "title": "货币的非国家化",
+        "subtitle": "[美] 弗里德里希·冯·哈耶克",
+        "image": "/books/denationalization-of-money.png"
+      },
+      {
+        "title": "超文本和超链接",
+        "subtitle": "李怡",
+        "image": "/books/hypertext-and-hyperlinks.png"
+      },
+      {
+        "title": "才女之累：李清照及其接受史",
+        "subtitle": "[美] 艾朗诺",
+        "image": "/books/burden-of-female-talent.png"
+      }
+    ],
+    "articles": [
+      {
+        "title": "2022 书单 Good Reading for Hard Times",
+        "date": "2022.12",
+        "href": "https://jasper-hockey-6ce.notion.site/2022-Good-Reading-for-Hard-Times-17acf26e6fb580acbbe5d5fc09a6038b"
+      },
+      {
+        "title": "春来不是读书天",
+        "date": "2022.04",
+        "href": "https://jasper-hockey-6ce.notion.site/17acf26e6fb5804e8fa4fbda24b3a17f"
+      },
+      {
+        "title": "放假了，读点好玩的书吧",
+        "date": "2021.07",
+        "href": "https://jasper-hockey-6ce.notion.site/17acf26e6fb580a180f4f475506a070f"
+      },
+      {
+        "title": "2020 年，我的读书小记",
+        "date": "2020.12",
+        "href": "https://jasper-hockey-6ce.notion.site/2020-17acf26e6fb580dd9518ca83a36ccd41"
+      }
+    ]
+  }
+}
