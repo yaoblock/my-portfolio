@@ -271,6 +271,11 @@ export default function Home() {
                   <a href="https://x.com/liuyaoyao_611/status/2010710683462377953?s=20" target="_blank" rel="noopener noreferrer" className="text-zinc-600 dark:text-zinc-400 hover:text-foreground underline underline-offset-2">Part 2</a>
                 </p>
               </div>
+              {content.watching.articles && content.watching.articles.length > 0 && (
+                <div className="mt-6">
+                  <ArticleList articles={content.watching.articles} />
+                </div>
+              )}
             </>
           )}
         </Section>
