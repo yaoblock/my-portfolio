@@ -263,30 +263,14 @@ export default function Home() {
                   />
                 </div>
               </div>
-
-              {content.watching.favorites?.map((fav) => (
-                <div key={fav.title} className="mt-8 flex items-center justify-between">
-                  <span className="text-sm sm:text-base font-semibold tracking-wider sm:tracking-widest uppercase text-zinc-400 dark:text-zinc-500">
-                    {fav.title}
-                  </span>
-                  <span className="flex items-center gap-2 text-sm">
-                    {fav.links.map((link, i) => (
-                      <span key={link.href} className="flex items-center gap-2">
-                        {i > 0 && <span className={muted}>/</span>}
-                        <ExternalLink href={link.href} className="text-sm font-normal">
-                          {link.label}
-                        </ExternalLink>
-                      </span>
-                    ))}
-                  </span>
-                </div>
-              ))}
-
-              {content.watching.articles && content.watching.articles.length > 0 && (
-                <div className="mt-6">
-                  <ArticleList articles={content.watching.articles} />
-                </div>
-              )}
+              <div className="mt-6">
+                <p className="text-sm text-foreground mb-3">
+                  <span className="font-medium">2025 favorites：</span>{" "}
+                  <a href="https://x.com/liuyaoyao_611/status/2010707878706102391?s=20" target="_blank" rel="noopener noreferrer" className="text-zinc-600 dark:text-zinc-400 hover:text-foreground underline underline-offset-2">Part 1</a>
+                  {" / "}
+                  <a href="https://x.com/liuyaoyao_611/status/2010710683462377953?s=20" target="_blank" rel="noopener noreferrer" className="text-zinc-600 dark:text-zinc-400 hover:text-foreground underline underline-offset-2">Part 2</a>
+                </p>
+              </div>
             </>
           )}
         </Section>
