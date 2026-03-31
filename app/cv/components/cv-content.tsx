@@ -17,7 +17,7 @@ export default function CVContent({ data }: { data: CVData }) {
     <div
       className={`min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 print:bg-white print:text-zinc-900 ${data.lang === "zh" ? "font-cv-zh" : "font-cv-en"}`}
     >
-      <main className="mx-auto max-w-3xl px-8 py-12 print:px-0 print:py-0 print:max-w-none">
+      <main className="mx-auto max-w-[642px] px-6 py-12 print:px-0 print:py-0 print:max-w-none">
         {/* Top bar: language toggle + export */}
         <div className="flex items-center justify-end gap-4 mb-8 print:hidden">
           <Link href={`/cv/${otherLang}`} className={`text-sm ${accent}`}>
@@ -57,7 +57,7 @@ export default function CVContent({ data }: { data: CVData }) {
           </h2>
           <div className="mt-4 space-y-1.5">
             {data.summary.map((line, i) => (
-              <p key={i} className="font-semibold text-sm">
+              <p key={i} className="text-base leading-relaxed">
                 {line}
               </p>
             ))}

@@ -74,13 +74,13 @@ export const zh: CVData = {
       logo: "/logo/dodo.png",
       projects: [
         {
-          title: "项目：负责去中心化交易协议 DODO 内容品牌与产品增长",
+          title: "项目：负责去中心化交易协议 DODO 的内容品牌建设与产品增长策略",
           subtitle:
             "Binance / Coinbase 投资 · 三百万用户 · 交易量超两千亿美金",
           bullets: [
-            { label: "从 0 到 1 创建 Dr. DODO 内容品牌", text: "主笔及编辑 50 余篇深度研究报告，为公司品牌参加国际会议与社区 AMA，建立 APAC 区域核心媒体关系网络，在 DeFi 社区建立品牌认知与行业影响力" },
-            { label: "链上数据分析赋能产品增长", text: "围绕做市算法、流动性池、资本效率、MEV 与套利等核心议题产出研究分析，建设对外 Dune 数据看板，研究结论赋能产品功能定义、GTM 策略制定与商务转化" },
-            { label: "DeFi 与 AI 赛道投研", text: "负责公司 Ventures 投研工作，主导项目发掘、筛选与尽调，覆盖产品架构、代币模型、竞争格局与增长路径分析，建立并维护创始人、投资机构及行业 KOL 关系网络" },
+            { label: "从零搭建内容驱动的 GTM 策略", text: "创建 Dr. DODO 研究品牌，组建并管理 6 人团队，主笔及编辑 50 余篇行业报告，通过深度内容建立产品在 DeFi 社区的认知与信任，配合国际会议演讲与社区 AMA 持续扩大品牌声量，构建 APAC 区域核心媒体关系网络" },
+            { label: "数据洞察驱动产品定位与增长", text: "围绕做市算法、流动性池、资本效率、MEV 等核心议题进行链上数据分析，搭建公开 Dune 数据看板，研究结论直接输入产品功能优先级排序、市场定位策略与商务拓展方向" },
+            { label: "竞品分析与市场研究", text: "负责 DeFi 与 AI 赛道的项目调研与竞争格局分析，覆盖产品架构、代币经济模型与增长路径，为公司战略决策与合作伙伴筛选提供依据，维护创始人、投资机构及行业 KOL 关系网络" },
           ],
         },
       ],
@@ -122,7 +122,7 @@ export const zh: CVData = {
           subtitle:
             "网易头部王牌产品 · 回合制品类标杆之作 · TFBOYS 品牌合作",
           bullets: [
-            { label: "市场策略制定与整合传播", text: "负责《梦幻西游》系列产品的品牌传播与市场营销工作，制定年度整合传播策略，主导 TFBOYS 主题曲全案传播、「梦幻西游×北西」电影跨界等 IP 联动营销事件，任职期间产品流水及用户数创历史新高" },
+            { label: "市场策略制定与整合传播", text: "负责《梦幻西游》系列产品的品牌传播与市场营销工作，制定年度整合传播策略，主导 TFBOYS 主题曲全案传播、「梦幻西游×北西」电影跨界等 IP 联动营销事件，统筹品牌嘉年华、发布会、城市玩家交流会及电竞赛事等线下活动策划与传播，任职期间产品流水及用户数创历史新高" },
             { label: "高管采访与发言人管理", text: "统筹品牌代言人及公司高层的对外发言管理，负责手游上线、版本更新等关键节点的舆情监控与危机应对，保障产品在高曝光周期内的品牌安全" },
             { label: "从零到一搭建社交媒体营销", text: "作为网易最早一批社媒营销探索者（5人团队），半年内从 0 到 1 搭建游戏社交媒体传播体系，覆盖微博、微信、知乎等核心平台，支持全线产品的上线获客与日常传播" },
           ],
@@ -133,7 +133,7 @@ export const zh: CVData = {
   more: [
     {
       label: "AI 拥趸",
-      text: "长期关注人工智能前沿动态，并学会 Vibe Coding 个人网站",
+      text: "长期关注人工智能前沿动态，实践 Vibe Coding 个人网站",
     },
     {
       label: "跑者",
@@ -155,13 +155,13 @@ export const en: CVData = {
     phone: "(+86) 13924280625",
   },
   summary: [
-    "10 years in marketing and PR, from strategic game launches at Tencent and NetEase to building a Web3 startup from zero — skilled in crisis PR, content strategy, and data-driven growth",
+    "10 years of product marketing across gaming & fintech — from marketing China's most iconic game IP (NetEase) to launching a heavily regulated AAA title with 100M+ players (Tencent) to building brand and GTM from zero for a DEX startup (DODO)",
   ],
   labels: {
     summary: "Summary",
     education: "Education",
     experience: "Experience",
-    more: "More Roles",
+    more: "Beyond Work",
     exportPdf: "PDF",
   },
   education: [
@@ -172,26 +172,26 @@ export const en: CVData = {
     },
     {
       institution: "Nanjing University",
-      degree: "B.A. in Drama, Film & Television Literature",
+      degree: "B.A. in Drama & Film Studies",
       dates: "2011.09 - 2015.07",
     },
   ],
   experience: [
     {
       company: "",
-      role: "Growth & Research Lead, DODO",
+      role: "Product Marketing Lead, DODO",
       dates: "2021.07 - 2025.06",
       logo: "/logo/dodo.png",
       projects: [
         {
           title:
-            "Project: Content brand building and product growth for DODO, a decentralized exchange protocol",
+            "Built brand and GTM from zero for a decentralized exchange",
           subtitle:
-            "Backed by Binance / Coinbase · Decentralized Exchange · $200B+ cumulative trading volume",
+            "Backed by Binance & Coinbase · 3M+ users · $200B+ trading volume",
           bullets: [
-            { label: "Built Dr. DODO content brand from 0 to 1", text: "authored and edited 50+ in-depth research reports, represented the brand at international conferences and community AMAs, established core media network across APAC, and built brand recognition and industry influence in the DeFi community" },
-            { label: "On-chain data analysis for product growth", text: "produced research on market-making algorithms, liquidity pools, capital efficiency, MEV and arbitrage; built public Dune dashboards; research insights informed product feature definition, GTM strategy, and business development" },
-            { label: "DeFi & AI investment research", text: "led the company's Ventures research, driving project sourcing, screening and due diligence covering product architecture, token models, competitive landscape and growth analysis; built and maintained a network of founders, investors and industry KOLs" },
+            { label: "Zero-to-one brand building", text: "created the Dr. DODO research brand — 50+ industry reports that established product credibility and community trust; spoke at international conferences and ran AMAs; built an APAC media network from scratch" },
+            { label: "Data-informed product marketing", text: "analyzed on-chain metrics around AMM algorithms, liquidity, and capital efficiency; built public Dune dashboards; insights directly shaped product messaging, feature prioritization, and partnership outreach" },
+            { label: "Market & competitive analysis", text: "owned landscape analysis across DeFi and AI — product architecture, tokenomics, and growth trajectories — to inform positioning, partnership strategy, and investment decisions" },
           ],
         },
       ],
@@ -204,22 +204,22 @@ export const en: CVData = {
       projects: [
         {
           title:
-            "Project: Led China launch communications for Tencent's strategic title PUBG",
+            "Led full go-to-market for PUBG China under high regulatory pressure",
           subtitle:
-            "KRAFTON flagship IP · Tencent strategic title · 10M+ Steam users · Multi-million PR budget management",
+            "KRAFTON flagship IP · 10M+ Steam players · Multi-million dollar budget",
           bullets: [
-            { label: "Crisis PR under pressure", text: "amid the Korean content ban and CCTV criticism of the IP, led risk contingency planning and sentiment response strategy, coordinated multi-party stakeholders across China and Korea to balance localized narrative with international IP image; core contributor to the company-award-winning tactical shooter sentiment management project" },
-            { label: "Creative campaigns & top-tier media relations", text: "conceived the viral 'Real-life Battle Royale' mini-program that attracted 2.1M active user sign-ups in 3 days; simultaneously orchestrated an interview matrix across top financial, tech, and gaming media to sustain high-density positive coverage offsetting negative sentiment, ultimately surpassing 10M pre-registrations" },
+            { label: "Navigated a crisis launch", text: "the game faced a national broadcast ban and regulatory scrutiny; aligned 4 stakeholders across China and Korea — compliance, platform safety, the Korean developer, and Tencent's team — to secure market entry" },
+            { label: "Drove 10M+ pre-registrations", text: "built a viral mini-app that drove 2.1M sign-ups in 3 days; ran a coordinated media campaign across finance, tech, and gaming press to shift sentiment and build launch momentum" },
           ],
         },
         {
           title:
-            "Project: Led PR communications for Naruto Mobile during its mature lifecycle (2 years)",
+            "Sustained growth for Naruto Mobile through a 2-year mature lifecycle",
           subtitle:
-            "Shueisha heavyweight IP · Top ACT-genre product · Won 2019 Tencent Games Best Growth Marketing Award",
+            "Shueisha licensed IP · #1 action game in China · 2019 Best Growth Marketing Award",
           bullets: [
-            { label: "Cross-regional communication strategy", text: "deep coordination with Japan's Shueisha on content review and release cadence, built long-term relationships with ACG vertical and domestic gaming media, developed a localized strategy combining IP with pop culture trends" },
-            { label: "PR-driven business growth", text: "leveraged PR as the core growth lever, timed campaigns to product milestones to generate buzz, contributing to 15.3M new users for the year at 200% KPI achievement, validating PR's direct impact on user acquisition" },
+            { label: "Cross-border IP management", text: "managed content approvals and release cadence directly with Japan's Shueisha; built lasting relationships with anime and gaming media across both markets" },
+            { label: "PR as a growth channel", text: "designed campaigns around product milestones to generate organic buzz — delivered 15.3M new users that year, 200% of target, proving PR's direct contribution to user acquisition" },
           ],
         },
       ],
@@ -232,13 +232,13 @@ export const en: CVData = {
       projects: [
         {
           title:
-            "Project: Brand PR & marketing for NetEase Games' Fantasy Westward Journey franchise",
+            "Grew China's most iconic game IP — 梦幻西游",
           subtitle:
-            "NetEase's flagship franchise · Benchmark turn-based game · TFBOYS brand partnership",
+            "NetEase's flagship title · #1 turn-based RPG in China · TFBOYS brand partnership",
           bullets: [
-            { label: "Marketing strategy & integrated communications", text: "led brand communications and marketing for the Fantasy Westward Journey franchise, developed annual integrated communication strategies, spearheaded TFBOYS theme song campaigns and the Fantasy Westward Journey × Beijing Meets Seattle cross-industry film collaboration; product revenue and user numbers hit all-time highs during tenure" },
-            { label: "Executive communications & spokesperson management", text: "managed external messaging for brand ambassadors and C-suite executives, oversaw sentiment monitoring and crisis response at key milestones including mobile launch and major updates, ensuring brand safety during high-exposure periods" },
-            { label: "Built social media marketing from zero", text: "as part of NetEase's earliest 5-person social media pioneering team, built the gaming social media communications system from scratch in 6 months, covering Weibo, WeChat, Zhihu and other core platforms, supporting user acquisition and daily communications across the entire product line" },
+            { label: "IP-driven campaigns", text: "developed annual marketing strategies and led cross-industry collaborations — TFBOYS theme song campaign and a film IP cross-promotion — driving product revenue and MAU to all-time highs" },
+            { label: "Built social channels from zero", text: "founding member of a 5-person team that launched NetEase Games' social presence in 6 months — Weibo, WeChat, and Zhihu across the full product portfolio" },
+            { label: "Spokesperson & crisis management", text: "owned external messaging for C-suite and brand ambassadors; ran crisis response and sentiment monitoring during high-exposure launch windows" },
           ],
         },
       ],
@@ -246,16 +246,16 @@ export const en: CVData = {
   ],
   more: [
     {
-      label: "AI Enthusiast",
-      text: "Follows AI developments closely, leverages various AI tools to enhance content production, sentiment monitoring, and data analysis; vibe-coded personal website (yaoblock.com)",
+      label: "Maker",
+      text: "Keeping up with the AI frontier — vibe-coded personal website yaoblock.com",
     },
     {
       label: "Runner",
-      text: "From failing the 800m fitness test to completing 11 full marathons (42.195 km) across Singapore, Nagoya, Seoul, Taiwan, Budapest and more",
+      text: "11 marathons across Singapore, Japan, Korea, Taiwan, Hungary and more",
     },
     {
       label: "Writer",
-      text: "Admitted to Peking University and Nanjing University via independent writing exams; long-time contributor to China's top tech, business, and current affairs publications (Huxiu, 36Kr, Southern Weekly, New Weekly), with 40+ in-depth articles published",
+      text: "40+ articles in top Chinese tech and business publications",
     },
   ],
 };
