@@ -86,7 +86,7 @@ export default function Home() {
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <h3 className="text-foreground font-semibold text-lg">
-                    Research Lead
+                    Product Marketing Lead
                     <span className="hidden sm:inline">, DODO</span>
                   </h3>
                   <p className={`mt-1 text-sm ${muted}`}>2021 – 2025</p>
@@ -124,7 +124,7 @@ export default function Home() {
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <h3 className="text-foreground font-semibold text-lg">
-                    Senior PR Manager
+                    Senior Product Marketing Manager
                     <span className="hidden sm:inline">, Tencent</span>
                   </h3>
                   <p className={`mt-1 text-sm ${muted}`}>2017 – 2020</p>
@@ -166,7 +166,7 @@ export default function Home() {
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <h3 className="text-foreground font-semibold text-lg">
-                    PR Manager
+                    Product Marketing Manager
                     <span className="hidden sm:inline">, NetEase</span>
                   </h3>
                   <p className={`mt-1 text-sm ${muted}`}>2014 – 2017</p>
